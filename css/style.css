@@ -5,12 +5,19 @@ Primary Color (Red): #d9a39a;
 Secondary Color (Gray): #c6c6c4;
 Body Color (Black): #343434;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #f2f1ee;
   font-family: 'Roboto', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-size: 16px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
   color: #343434;
 }
 
@@ -20,6 +27,7 @@ h1, h2, h3, h4 {
   font-weight: 500;
   color: #d9a39a
 }
+
 h1 {
   font-size: 2.75em;
 }
@@ -31,40 +39,57 @@ h2 {
 h3 {
   font-size: 1.75em;
 }
+
 h4 {
   font-size: 1.35em;
 }
+h5 {
+  font-size: 1.2em;
+}
+
 a {
   color: #d9a39a;
-  text-decoration: underline; /* Underlining links */
+  text-decoration: underline;
+  /* Underlining links */
 }
-a:active { /* selected link */
+
+a:active {
+  /* selected link */
   color: #636363;
 }
+
 a:hover,
 a:focus {
   color: #c6c6c4;
-  text-decoration: none; /* Removing underlining when hovering over a link */
+  text-decoration: none;
+  /* Removing underlining when hovering over a link */
 }
+
 img {
   width: 100%;
 }
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #d9a39a;
   color: #f2f1ee;
   text-decoration: none;
   font-weight: 300;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #d9a39a; /* width of the border, type, color */
+  border-bottom: 2px solid #d9a39a;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
+
 .button:hover {
-  opacity: 0.6; /* Reduces the opacity of the button to 60% */
+  opacity: 0.6;
+  /* Reduces the opacity of the button to 60% */
   color: #f2f1ee;
   text-decoration: none;
 }
+
 .button.contact {
   background-color: transparent;
   color: #d9a39a;
@@ -72,8 +97,121 @@ img {
   text-transform: uppercase;
   border: 2px solid #d9a39a;
 }
+
 .button.contact:hover {
   background-color: #d9a39a;
   color: #f2f1ee;
   text-decoration: none;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+header {
+  background-color: #f2f1ee;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+main {
+  padding-top: 133px;
+}
+
+#logo {
+  max-width: 40px;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+  width: 100%;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  font-weight: 300;
+  color: #d9a39a;
+  text-decoration: none;
+}
+
+#hero h1 {
+  text-align: center;
+  /* Centers text */
+}
+
+#hero {
+  padding: 20px 10px;
+  display: inline-block;
+  width: 100%;
+}
+
+#work .row {
+  padding-bottom: : 15px;
+  border-bottom: 3px solid #c6c6c4;
+}
+
+#work h2, h3, body {
+  text-align: center;
+  /* Centers text */
+}
+
+#project {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#contact {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2.75;
+  font-weight: 500;
+  color: #d9a39a;
+  text-decoration: none;
+}
+
+#social {
+  max-width: 40px;
+}
+
+#skills_tools ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#skills_tools>ul>li {
+  display: inline-block;
+  width: 100%;
+}
+
+#skills_tools>ul>li>a {
+  padding: 0 15px;
+  font-weight: 300;
+  color: #d9a39a;
+  text-decoration: none;
+}
+
+#skills_tools .row {
+  padding-bottom: : 15px;
+  border-bottom: 3px solid #c6c6c4;
+}
+
+#me {
+  max-width: 60%;
+}
+
+#pic_project {
+  padding: 0 15px;
+}
+#subtitle{
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  color: #c6c6c4;
 }
