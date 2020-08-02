@@ -15,61 +15,51 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Montserrat', sans-serif
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.4;
+  font-weight: 500;
   color: #d9a39a
 }
 h1 {
   font-size: 2.75em;
-  font-weight: 500;
 }
 
 h2 {
   font-size: 2.25em;
-  font-weight: 500;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: 500;
 }
 h4 {
   font-size: 1.35em;
-  font-weight: 500;
 }
 a {
   color: #d9a39a;
-  text-decoration: none; /* No underlining */
+  text-decoration: underline; /* Underlining links */
 }
-a:hover {
-  color: #c6c6c4;
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-
 a:active { /* selected link */
   color: #636363;
 }
 a:hover,
 a:focus {
   color: #c6c6c4;
-  text-decoration: underline;
+  text-decoration: none; /* Removing underlining when hovering over a link */
 }
-
 img {
   width: 100%;
 }
-
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #d9a39a;
   color: #f2f1ee;
+  text-decoration: none;
   font-weight: 300;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #d9a39a; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
-
 .button:hover {
   opacity: 0.6; /* Reduces the opacity of the button to 60% */
   color: #f2f1ee;
@@ -78,10 +68,12 @@ img {
 .button.contact {
   background-color: transparent;
   color: #d9a39a;
+  text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #d9a39a;
 }
 .button.contact:hover {
   background-color: #d9a39a;
   color: #f2f1ee;
+  text-decoration: none;
 }
