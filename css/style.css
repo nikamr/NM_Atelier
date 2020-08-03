@@ -49,11 +49,10 @@ h5 {
 
 a {
   color: #d9a39a;
-  text-decoration: underline;
   /* Underlining links */
 }
 
-a:active {
+a:visited {
   /* selected link */
   color: #636363;
 }
@@ -64,7 +63,10 @@ a:focus {
   text-decoration: none;
   /* Removing underlining when hovering over a link */
 }
-
+a:active {
+  /* selected link */
+  color: #636363;
+}
 img {
   width: 100%;
 }
@@ -113,14 +115,16 @@ header {
   background-color: #f2f1ee;
   text-align: center;
   padding: 10px 0;
-  position: relative;
+  position: fixed;
+  width:100%;
 }
 
 main {
   padding-top: 133px;
+  text-align: center;
 }
 
-#logo {
+.logo {
   max-width: 40px;
 }
 
@@ -131,7 +135,6 @@ nav>ul {
 
 nav>ul>li {
   display: inline-block;
-  width: 100%;
 }
 
 nav>ul>li>a {
@@ -140,78 +143,65 @@ nav>ul>li>a {
   color: #d9a39a;
   text-decoration: none;
 }
-
-#hero h1 {
+footer {
   text-align: center;
-  /* Centers text */
 }
 
-#hero {
+.hero {
   padding: 20px 10px;
   display: inline-block;
   width: 100%;
 }
 
-#work .row {
+.work .row {
   padding-bottom: : 15px;
   border-bottom: 3px solid #c6c6c4;
 }
 
-#work h2, h3, body {
-  text-align: center;
-  /* Centers text */
+.project {
+  padding: 20px 10px;
 }
 
-#project {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-#contact {
-  font-family: 'Montserrat', sans-serif;
-  line-height: 2.75;
-  font-weight: 500;
-  color: #d9a39a;
-  text-decoration: none;
-}
-
-#social {
+.social {
   max-width: 40px;
+  max-height: 40px;
+  margin: 20px 10px;
 }
 
-#skills_tools ul {
+.skills_tools ul {
   list-style-type: none;
   padding: 0;
 }
 
-#skills_tools>ul>li {
+.skills_tools>ul>li {
   display: inline-block;
   width: 100%;
 }
 
-#skills_tools>ul>li>a {
+.skills_tools>ul>li>a {
   padding: 0 15px;
   font-weight: 300;
   color: #d9a39a;
   text-decoration: none;
 }
 
-#skills_tools .row {
+.skills_tools .row {
   padding-bottom: : 15px;
   border-bottom: 3px solid #c6c6c4;
 }
 
-#me {
+.me {
   max-width: 60%;
 }
 
-#pic_project {
-  padding: 0 15px;
+.pic_project {
+  max-width: 80%;
 }
-#subtitle{
+.subtitle{
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
   color: #c6c6c4;
+  display: block;
 }
