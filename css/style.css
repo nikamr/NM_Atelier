@@ -250,6 +250,77 @@ Animation Clouds
   from {transform: translate(446px,48px);}
   to {transform: translate(100px, 48px);}
 }
+/* ==============================
+Sea
+================================= */
+.fishr{
+  animation-duration: 5s;
+  animation-name: sea-move;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: linear;
+}
+
+@keyframes sea-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200,50px);}
+}
+.fish2r{
+  animation-duration: 10s;
+  animation-name: sea-move;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+  animation-timing-function: ease-in;
+}
+
+@keyframes sea-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.fish3r{
+  animation-duration: 15s;
+  animation-name: sea-move;
+  animation-iteration-count: 4 ;
+  animation-direction: reverse;
+  animation-timing-function: ease;
+}
+
+@keyframes sea-move {
+    from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.fish{
+  animation-duration: 5s;
+  animation-name: sea-move;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes sea-move {
+    from {transform: translate(0,50px);}
+  to {transform: translate(400px,50px);}
+}
+.fish2{
+  animation-duration: 10s;
+  animation-name: sea-move;
+  animation-timing-function: ease;
+}
+
+@keyframes sea-move {
+    from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+.fish3{
+  animation-duration: 15s;
+  animation-name: sea-move;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes sea-move {
+    from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
 
 /* ==============================
 Navigation underline
@@ -281,6 +352,7 @@ Navigation underline
 {
     opacity: 1;
     width: 20%;
+    align-items: center;
 }
 
 /* ==============================
