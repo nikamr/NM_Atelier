@@ -82,7 +82,13 @@ img {
   border-radius: 3px;
   border-bottom: 2px solid #d9a39a;
   /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 0.2s;
+  transition-property: opacity;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
 
 .button:hover {
@@ -205,7 +211,77 @@ footer {
   color: #c6c6c4;
   display: block;
 }
+/* ==============================
+Animation Sun
+================================= */
 
+.sun {
+  animation-duration: 5s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+/* ==============================
+Animation Clouds
+================================= */
+.cloud-front {
+  animation-duration: 20s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+/* ==============================
+Navigation underline
+================================= */
+.navigation a:before, .navigation a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #c6c6c6;
+    transition: all 0.3s;
+}
+
+.navigation a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+.navigation a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+.navigation a:hover:before, .navigation a:hover:after
+{
+    opacity: 1;
+    width: 20%;
+}
 
 /* ==============================
 Medium devices (640px and larger)
