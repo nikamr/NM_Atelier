@@ -29,11 +29,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.25em;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2em;
 }
 
 h3 {
@@ -43,8 +43,17 @@ h3 {
 h4 {
   font-size: 1.35em;
 }
+
 h5 {
   font-size: 1.2em;
+}
+
+#span1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  color: #343434;
+  display: block;
+  text-transform: uppercase;
 }
 
 a {
@@ -63,10 +72,12 @@ a:focus {
   text-decoration: none;
   /* Removing underlining when hovering over a link */
 }
+
 a:active {
   /* selected link */
   color: #636363;
 }
+
 img {
   width: 100%;
 }
@@ -122,12 +133,12 @@ header {
   text-align: center;
   padding: 10px 0;
   position: fixed;
-  width:100%;
+  width: 100%;
 }
 
 main {
-  padding-top: 133px;
-  text-align: center;
+  padding-top: 80px;
+  text-align: left;
 }
 
 .logo {
@@ -137,6 +148,7 @@ main {
 nav>ul {
   list-style-type: none;
   padding: 0;
+  margin: 10px 0;
 }
 
 nav>ul>li {
@@ -148,9 +160,13 @@ nav>ul>li>a {
   font-weight: 300;
   color: #d9a39a;
   text-decoration: none;
+  position: relative;
 }
+
 footer {
   text-align: center;
+  background-color: #ebebeb;
+  padding: 30px
 }
 
 .hero {
@@ -160,12 +176,28 @@ footer {
 }
 
 .work .row {
-  padding-bottom: : 15px;
+  padding-bottom: 25px;
   border-bottom: 3px solid #c6c6c4;
+  margin-bottom: 25px;
+}
+
+.work .row:last-child {
+  margin-bottom: 0px;
 }
 
 .project {
   padding: 20px 10px;
+}
+
+#span3 {
+  font-size: 24px;
+  display: block;
+}
+
+.learning ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: left;
 }
 
 .social {
@@ -201,9 +233,10 @@ footer {
 }
 
 .pic_project {
-  max-width: 80%;
+  max-width: 100%;
 }
-.subtitle{
+
+.subtitle {
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-size: 16px;
@@ -211,10 +244,10 @@ footer {
   color: #c6c6c4;
   display: block;
 }
+
 /* ==============================
 Animation Sun
 ================================= */
-
 .sun {
   animation-duration: 5s;
   animation-name: color-change;
@@ -222,11 +255,21 @@ Animation Sun
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
+
 @keyframes color-change {
-  0% {fill: #edc655;}
-  50% {fill: #fcffad;}
-  100% {fill: #f76414;}
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
 }
+
 /* ==============================
 Animation Clouds
 ================================= */
@@ -239,21 +282,33 @@ Animation Clouds
 }
 
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
+
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 /* ==============================
 Sea
 ================================= */
-.fishr{
+.fishr {
   animation-duration: 5s;
   animation-name: sea-move;
   animation-iteration-count: infinite;
@@ -262,10 +317,16 @@ Sea
 }
 
 @keyframes sea-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200, 50px);
+  }
 }
-.fish2r{
+
+.fish2r {
   animation-duration: 10s;
   animation-name: sea-move;
   animation-iteration-count: infinite;
@@ -274,22 +335,34 @@ Sea
 }
 
 @keyframes sea-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
-.fish3r{
+
+.fish3r {
   animation-duration: 15s;
   animation-name: sea-move;
-  animation-iteration-count: 4 ;
+  animation-iteration-count: 4;
   animation-direction: reverse;
   animation-timing-function: ease;
 }
 
 @keyframes sea-move {
-    from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
-.fish{
+
+.fish {
   animation-duration: 5s;
   animation-name: sea-move;
   animation-iteration-count: infinite;
@@ -297,20 +370,32 @@ Sea
 }
 
 @keyframes sea-move {
-    from {transform: translate(0,50px);}
-  to {transform: translate(400px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(400px, 50px);
+  }
 }
-.fish2{
+
+.fish2 {
   animation-duration: 10s;
   animation-name: sea-move;
   animation-timing-function: ease;
 }
 
 @keyframes sea-move {
-    from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
-.fish3{
+
+.fish3 {
   animation-duration: 15s;
   animation-name: sea-move;
   animation-iteration-count: infinite;
@@ -318,87 +403,110 @@ Sea
 }
 
 @keyframes sea-move {
-    from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 /* ==============================
-Navigation underline
+Navigation animation
 ================================= */
-.navigation a:before, .navigation a:after
+.nav1 a:before, .nav1 a:after
 {
     position: absolute;
-    opacity: 0;
-    width: 0%;
+    left: 0px;
+    width: 100%;
     height: 2px;
-    content: '';
-    background: #c6c6c6;
+    background: #343434;
+    content: "";
+    opacity: 0;
     transition: all 0.3s;
 }
 
-.navigation a:before
+.nav1 a:before
 {
-    left: 0px;
     top: 0px;
+    transform: translateY(10px);
 }
 
-.navigation a:after
+.nav1 a:after
 {
-    right: 0px;
     bottom: 0px;
+    transform: translateY(-10px);
 }
 
-.navigation a:hover:before, .navigation a:hover:after
+.nav1 a:hover:before, .nav1 a:hover:after
 {
     opacity: 1;
-    width: 20%;
-    align-items: center;
+    transform: translateY(0px);
 }
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-      text-align: right;
-      padding: 20px 0 13px;
-    }
-
-    nav {
-      width: auto;
-      float: right
-      margin-top: 4px;
-    }
-    .hero span {
-  display: block;
-}
-.col-md-6 {
-  width: 50%;
-}
-[class*="col-"] {
-  float: left;
-  padding: 10px
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
+    text-align: unset;
+    padding: 20px 0 13px;
   }
-.about-page h3 { margin-top: 0;}
 
+  nav {
+    float: right;
+  }
+
+  .hero h1 {
+    font-size: 2.75em;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  #span2 {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .about-page h3 {
+    margin-top: 0;
+  }
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
   .col-lg-7 {
     width: 58.33%;
-    }
-    .col-lg-5  {
-      width: 41.66%;
-}
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .container {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body {
+    font-size: 18px;
+  }
