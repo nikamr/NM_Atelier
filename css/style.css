@@ -156,7 +156,7 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  padding: 5px 15px;
   font-weight: 300;
   color: #d9a39a;
   text-decoration: none;
@@ -183,6 +183,7 @@ footer {
 
 .work .row:last-child {
   margin-bottom: 0px;
+  border-bottom:unset;
 }
 
 .project {
