@@ -130,7 +130,6 @@ img {
 
 header {
   background-color: #f2f1ee;
-  text-align: center;
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -142,17 +141,13 @@ main {
 }
 
 .logo {
-  max-width: 40px;
+  max-width: 50px;
 }
 
 nav>ul {
   list-style-type: none;
   padding: 0;
-  margin: 10px 0;
-}
-
-nav>ul>li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -163,6 +158,36 @@ nav>ul>li>a {
   position: relative;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  padding-right: 0;
+  font-size: 20px;
+}
+.navtoggle.responsive li  {
+  display: block;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
 footer {
   text-align: center;
   background-color: #ebebeb;
@@ -183,7 +208,7 @@ footer {
 
 .work .row:last-child {
   margin-bottom: 0;
-  border-bottom:none;
+  border-bottom: none;
 }
 
 .project {
@@ -413,11 +438,32 @@ Sea
   }
 }
 
+/
 /* ==============================
-Navigation animation
+Logo for all devices with width larger than 641px and larger
 ================================= */
-.nav1 a:before, .nav1 a:after
-{
+
+@media only screen and (min-width: 640px) {
+  .logo {
+    max-width: 40px;
+  }
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav>ul>li {
+    display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+
+  /* ==============================
+  Navigation animation
+  ================================= */
+  .nav1 a:before, .nav1 a:after {
     position: absolute;
     left: 0;
     width: 100%;
@@ -426,25 +472,24 @@ Navigation animation
     content: "";
     opacity: 0;
     transition: all 0.3s;
-}
+  }
 
-.nav1 a:before
-{
+  .nav1 a:before {
     top: 0;
     transform: translateY(10px);
-}
+  }
 
-.nav1 a:after
-{
+  .nav1 a:after {
     bottom: 0;
     transform: translateY(-10px);
-}
+  }
 
-.nav1 a:hover:before, .nav1 a:hover:after
-{
+  .nav1 a:hover:before, .nav1 a:hover:after {
     opacity: 1;
     transform: translateY(0);
+  }
 }
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -511,4 +556,4 @@ Large devices (1024px or larger)
   body {
     font-size: 18px;
   }
-  }
+}

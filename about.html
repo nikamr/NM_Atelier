@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/bc3b6ca72f.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <title>Nika Mrden</title>
@@ -13,14 +14,17 @@
 <body id="about-page">
   <header>
     <div class="container">
-      <img class="logo" src="img/logo.png" alt="NM">
-      <nav>
-        <ul class="nav1">
-          <li><a href="index.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact"> Contact </a></li>
-        </ul>
-      </nav>
+      <div class="navtoggle" id="myNavtoggle">
+        <img class="logo" src="img/logo.png" alt="NM">
+        <nav>
+          <ul class="nav1">
+            <li><a href="index.html">Projects</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()"> Contact </a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fas fa-bars"></i></a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </header>
   <main>
