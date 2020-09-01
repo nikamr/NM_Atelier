@@ -25,7 +25,7 @@ h1, h2, h3, h4 {
   font-family: 'Montserrat', sans-serif;
   line-height: 1.4;
   font-weight: 500;
-  color: #d9a39a
+  color: #d9a39a;
 }
 
 h1 {
@@ -182,8 +182,8 @@ footer {
 }
 
 .work .row:last-child {
-  margin-bottom: 0px;
-  border-bottom:unset;
+  margin-bottom: 0;
+  border-bottom:none;
 }
 
 .project {
@@ -419,7 +419,7 @@ Navigation animation
 .nav1 a:before, .nav1 a:after
 {
     position: absolute;
-    left: 0px;
+    left: 0;
     width: 100%;
     height: 2px;
     background: #343434;
@@ -430,20 +430,20 @@ Navigation animation
 
 .nav1 a:before
 {
-    top: 0px;
+    top: 0;
     transform: translateY(10px);
 }
 
 .nav1 a:after
 {
-    bottom: 0px;
+    bottom: 0;
     transform: translateY(-10px);
 }
 
 .nav1 a:hover:before, .nav1 a:hover:after
 {
     opacity: 1;
-    transform: translateY(0px);
+    transform: translateY(0);
 }
 /* ==============================
 Medium devices (640px and larger)
@@ -510,4 +510,5 @@ Large devices (1024px or larger)
 
   body {
     font-size: 18px;
+  }
   }
