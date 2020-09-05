@@ -457,21 +457,17 @@ Logo for all devices with width larger than 641px and larger
     display: inline-block;
   }
 
-  .navtoggle li:not(:last-child) {
-    display: inline-block;
-  }
+    .navtoggle li:not(:last-child) {
+      display: inline-block;
+    }
 
-  .navtoggle li:last-child {
-    display: none;
-  }
+      .navtoggle li:last-child {
+        display: none;
+        border-top: none;
+      }
 
   .navtoggle li .icon {
     display: none;
-  }
-  .navtoggle.responsive li {
-    display: block;
-    padding-top: 10px;
-    border-top: none;
   }
 
 /* ==============================
