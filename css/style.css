@@ -207,6 +207,10 @@ footer {
   margin-bottom: 0;
   border-bottom: none;
 }
+.skills_tools .row:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
 
 .project {
   padding: 20px 10px;
