@@ -468,36 +468,11 @@ Logo for all devices with width larger than 641px and larger
   .navtoggle li .icon {
     display: none;
   }
-
-  /* ==============================
-  Navigation animation
-  ================================= */
-  .nav1 a:before, .nav1 a:after {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background: #343434;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
+  .navtoggle.responsive li {
+    display: block;
+    padding-top: 10px;
+    border-top: none;
   }
-
-  .nav1 a:before {
-    top: 0;
-    transform: translateY(10px);
-  }
-
-  .nav1 a:after {
-    bottom: 0;
-    transform: translateY(-10px);
-  }
-
-  .nav1 a:hover:before, .nav1 a:hover:after {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* ==============================
 Medium devices (640px and larger)
