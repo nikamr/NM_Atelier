@@ -38,6 +38,7 @@ h2 {
 
 h3 {
   font-size: 1.75em;
+  margin-top: 0;
 }
 
 h4 {
@@ -86,7 +87,7 @@ img {
   display: inline-block;
   /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #d9a39a;
-  color: #f2f1ee;
+  color: #f2f1ee !important;
   text-decoration: none;
   font-weight: 300;
   padding: 10px;
@@ -111,7 +112,7 @@ img {
 
 .button.contact {
   background-color: transparent;
-  color: #d9a39a;
+  color: #d9a39a !important;
   text-decoration: none;
   text-transform: uppercase;
   border: 2px solid #d9a39a;
@@ -180,12 +181,12 @@ nav>ul>li>a {
 
 .navtoggle.responsive li {
   display: block;
-  padding-top: 10px;
+  padding: 10px 0;
   border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
+  padding: 0 10px;
 }
 
 footer {
@@ -227,8 +228,8 @@ footer {
 }
 
 .social {
-  max-width: 40px;
-  max-height: 40px;
+  width: auto;
+  max-height: 50px;
   margin: 20px 10px;
 }
 
@@ -390,7 +391,7 @@ Logo for all devices with width larger than 641px and larger
   }
 
   nav>ul {
-    margin: 1em 0;
+    margin: 5px 0;
   }
 
   nav>ul>li {
@@ -414,6 +415,10 @@ Logo for all devices with width larger than 641px and larger
     display: none;
   }
 
+  .navtoggle.responsive li {
+    padding: 0;
+    border-top: none;
+  }
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
