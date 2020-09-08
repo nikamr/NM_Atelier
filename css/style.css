@@ -466,6 +466,9 @@ Logo for all devices with width larger than 641px and larger
 .navtoggle li .icon {
   display: none;
 }
+.navtoggle.responsive nav {
+padding: 0;
+}
 
   /* ==============================
   Navigation animation
